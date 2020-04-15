@@ -1,0 +1,26 @@
+using system;
+
+namespace ResponsiPemrograman2918
+{
+    class program
+{
+      static void main(string[] args)
+    {
+        int gajih1;
+        int gajih2;
+        karyawan karyawan1 = new karyawan("1212","ujang",3000000);
+        karyawan karyawan2 = new karyawan("2121","jamet",4000000);
+        console.writeline("no nik/nama\t\tGajih Sebulan");
+        console.writeline("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        console.writeline("1. "+karyawan1.nik+"+karyawan1.nama+"\t\t"+karyawan1,gajihBulanan);
+        console.writeline("1. "+karyawan2.nik+"+karyawan2.nama+"\t\t"+karyawan2,gajihBulanan);
+        console.writeline("\n\nMayan Naik Gajih 10%");
+        gajih1=(10+karyawan1.gajihBulanan)/100;
+        gajih2=(10+karyawan2.gajihBulanan)/100;
+        console.writeline("no nik/nama\t\tGajih Sebulan");
+        console.writeline("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        console.writeline("1. "+karyawan1.nik+"+karyawan1.nama+"\t\t"+karyawan1,gajihBulanan);
+        console.writeline("1. "+karyawan2.nik+"+karyawan2.nama+"\t\t"+karyawan2,gajihBulanan);
+        }
+    }
+}
